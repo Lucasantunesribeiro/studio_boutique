@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="12" fill="#000000"/>
+  <g transform="translate(12, 12)">
+    <!-- S letter in elegant, minimalist style -->
+    <path d="M 20 8 Q 12 8 8 12 Q 4 16 4 20 Q 4 24 8 26 L 32 26 Q 36 26 36 28 Q 36 30 32 32 L 12 32 Q 8 32 4 28"
+          stroke="#FFFFFF"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+    <path d="M 20 32 Q 28 32 32 28 Q 36 24 36 20 Q 36 16 32 14 L 8 14 Q 4 14 4 12 Q 4 10 8 8 L 28 8 Q 32 8 36 12"
+          stroke="#FFFFFF"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+  </g>
+  <!-- Small diamond accent -->
+  <polygon points="32,52 36,56 32,60 28,56" fill="#FFFFFF" opacity="0.8"/>
+</svg>
