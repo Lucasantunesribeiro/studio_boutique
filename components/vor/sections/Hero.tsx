@@ -26,8 +26,8 @@ export function Hero() {
           </p>
 
           {/* CTA */}
-          <div className="mb-16">
-            <CTAWhatsApp size="lg" className="text-lg px-10 py-6 h-auto" />
+          <div className="mb-16 flex justify-center">
+            <CTAWhatsApp size="lg" className="text-base md:text-lg px-6 md:px-10 py-4 md:py-6 h-auto" />
           </div>
 
           {/* Proof Points */}

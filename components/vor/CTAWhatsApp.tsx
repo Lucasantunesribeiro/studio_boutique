@@ -10,6 +10,7 @@ interface CTAWhatsAppProps {
   size?: "default" | "lg" | "sm";
   className?: string;
   children?: React.ReactNode;
+  onClick?: () => void;
 }
 
 export function CTAWhatsApp({
@@ -18,16 +19,22 @@ export function CTAWhatsApp({
   size = "lg",
   className,
   children,
+  onClick,
 }: CTAWhatsAppProps) {
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `${WHATSAPP_BASE_URL}/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+  const handleClick = () => {
+    onClick?.();
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <Button
       variant={variant}
       size={size}
       className={className}
-      onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}
+      onClick={handleClick}
       aria-label="Reservar visita no WhatsApp"
     >
       <MessageCircle className="h-5 w-5" aria-hidden="true" />
